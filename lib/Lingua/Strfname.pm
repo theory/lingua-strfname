@@ -4,7 +4,7 @@ use strict;
 require Exporter;
 use vars qw($VERSION @EXPORT @EXPORT_OK @ISA);
 
-$VERSION = "0.03";
+$VERSION = "0.10";
 @ISA = qw(Exporter);
 @EXPORT = @EXPORT_OK = qw(strfname);
 
