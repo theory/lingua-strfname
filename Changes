@@ -1,6 +1,6 @@
 Revision history for Perl module Lingua::Strfname.
 
-0.03
+0.03  Tue Aug 26 02:03:06 2003
       - Reorganized disstribution to be more like other Perl modules.
       - Added POD testing.
       - Switched to Module::Build
