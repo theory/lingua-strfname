@@ -1,6 +1,9 @@
+Build.PL
 Changes
+MANIFEST			This list of files
+META.yml
 Makefile.PL
-MANIFEST
 README
-Strfname.pm
-test.pl
+lib/Lingua/Strfname.pm
+t/01basic.t
+t/99pod.t

@@ -4,7 +4,7 @@ use strict;
 require Exporter;
 use vars qw($VERSION @EXPORT @EXPORT_OK @ISA);
 
-$VERSION = "0.02";
+$VERSION = "0.03";
 @ISA = qw(Exporter);
 @EXPORT = qw(strfname);
 @EXPORT_OK = qw(strfname);
@@ -32,7 +32,7 @@ __END__
 
 =head1 NAME
 
-Lingua::Strfname - Formats people's names.
+Lingua::Strfname - Formats people's names
 
 =head1 SYNOPSIS
 
@@ -113,16 +113,12 @@ Here are the supported formats:
 
 =head1 AUTHOR
 
-David Wheeler E<lt>david@wheeler.netE<gt>, with implementation assistance from
-David Lowe.
-
-=head1 SEE ALSO
-
-perl
+David Wheeler <david@wheeler.net>, with implementation assistance from David
+Lowe.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2000-2002, David Wheeler. All Rights Reserved.
+Copyright (c) 2000-2003, David Wheeler. All Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under the
 same terms as Perl itself.
