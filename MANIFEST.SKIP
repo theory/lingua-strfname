@@ -4,4 +4,5 @@
 ~$
 \.bak$
 ^MANIFEST\.SKIP$
+^Lingua-Strfname
 CVS
