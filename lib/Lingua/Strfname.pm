@@ -6,8 +6,7 @@ use vars qw($VERSION @EXPORT @EXPORT_OK @ISA);
 
 $VERSION = "0.03";
 @ISA = qw(Exporter);
-@EXPORT = qw(strfname);
-@EXPORT_OK = qw(strfname);
+@EXPORT = @EXPORT_OK = qw(strfname);
 
 sub strfname {
     my $format = shift;
@@ -15,13 +14,13 @@ sub strfname {
 
     foreach my $a (0..$#_) {
         my $def = defined $_[$a] && $_[$a] ne '';
-        $t{qw(l f m p s a b c d e)[$a]} = $def && $_[$a];
-        $t{qw(L F M _ _ A B C D E)[$a]} = $def && substr($_[$a], 0, 1) . '.';
-        $t{qw(T S I _ _ 1 2 3 4 5)[$a]} = $def && substr($_[$a], 0, 1);
+        $t{qw(l f m p s g a b c d e)[$a]} = $def && $_[$a];
+        $t{qw(L F M _ _ _ A B C D E)[$a]} = $def && substr($_[$a], 0, 1) . '.';
+        $t{qw(T S I _ _ _ 1 2 3 4 5)[$a]} = $def && substr($_[$a], 0, 1);
     }
 
     local $^W;
-    $format =~ s/%([^lfmpsabcdeLFMABCDETSI12345%]*)(.)/($_ = $t{$2}) && "$1$_"/ge;
+    $format =~ s/%([^lfmpsgxsabcdeLFMABCDETSI12345%]*)(.)/($_ = $t{$2}) && "$1$_"/ge;
     return $format;
 }
 
@@ -46,12 +45,14 @@ Lingua::Strfname - Formats people's names
 
 This module exports one function, strfname():
 
-  strfname($format, $last, $first, $middle, $prefix, $suffix, @extra_names)
+  strfname($format, $last, $first, $middle, $prefix, $suffix, $generation,
+           @extra_names)
 
 The strfname function uses the formatting string passed in $format to format a
-person's name. The remaining arguments make up the name: last name, first name,
-middle name, prefix ('Mr.', 'Ms.', 'Dr.', etc.) and suffix ('Ph.D., 'MD', etc.).
-Up to five additional names may also be passed.
+person's name. The remaining arguments make up the name: last/family name ,
+first/given name, middle/second name, prefix ('Mr.', 'Ms.', 'Dr.', etc.),
+suffix ('Ph.D., 'MD', etc.), and generation ('III', 'Jr.', etc.). Up to five
+additional names may also be passed.
 
 The formats are roughly based on the ideas behind sprintf formatting or strftime
 formatting. Each format is denoted by a percent sign (%) and a single
@@ -76,11 +77,12 @@ would yield 'William Clinton'. But this call
 would yield 'William Jefferson Clinton'. Similarly, you can add a comma where
 you need one, but only if you need one:
 
-  strfname("%p% f% M% l%, s", 'Clinton', 'William', 'Jefferson', 'Mr.', 'JD');
+  strfname("%p% f% M% l% g%, s", 'Clinton', 'William', 'Jefferson', 'Mr.',
+           'JD', 'III');
 
-would yield 'Mr. William J. Clinton, JD', but if there is no suffix (delete 'JD'
-from the call above), it yeilds 'Mr. William J. Clinton', leaving off the comma
-that would preceed the suffix, if it existed.
+would yield 'Mr. William J. Clinton III, JD', but if there is no suffix
+(delete 'JD' from the call above), it yeilds 'Mr. William J. Clinton III',
+leaving off the comma that would preceed the suffix, if it existed.
 
 Here are the supported formats:
 
@@ -89,6 +91,7 @@ Here are the supported formats:
   %m Middle Name
   %p Prefix
   %s Suffix
+  %g Generation
   %L Last Name Initial with period
   %F First Name Initial with period
   %M Middle Name Initial with period

@@ -1,5 +1,11 @@
 Revision history for Perl module Lingua::Strfname.
 
+0.10  Mon Oct  6 20:44:45 2003
+      - Added "%g" template for a separate "generation" name part. This Forces
+        more arguments to be passed to strfname, which, if you used extra
+        names in the past, breaks backwards compatability. Hence the bump to
+        version 0.10.
+
 0.03  Tue Aug 26 02:03:06 2003
       - Reorganized disstribution to be more like other Perl modules.
       - Added POD testing.
