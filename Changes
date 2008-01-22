@@ -1,5 +1,9 @@
 Revision history for Perl module Lingua::Strfname.
 
+0.11
+      - Added the "configure_requires", "build_requires", and "recommends"
+        parameters to Build.PL.
+
 0.10  Mon Oct  6 20:44:45 2003
       - Added "%g" template for a separate "generation" name part. This Forces
         more arguments to be passed to strfname, which, if you used extra
