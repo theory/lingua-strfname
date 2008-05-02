@@ -3,6 +3,11 @@ Revision history for Perl module Lingua::Strfname.
 0.11
       - Added the "configure_requires", "build_requires", and "recommends"
         parameters to Build.PL.
+      - Updated the POD test to take proper advantage of Test::Pod 1.20 or
+        newer.
+      - Rewrote t/01basic.t to use Test::More instead of Test. Hard to believe
+        that this module was written so long ago!
+      - Added a link to the Subversion repository.
 
 0.10  Mon Oct  6 20:44:45 2003
       - Added "%g" template for a separate "generation" name part. This Forces
