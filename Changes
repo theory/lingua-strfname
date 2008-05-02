@@ -1,5 +1,7 @@
 Revision history for Perl module Lingua::Strfname.
 
+0.12
+
 0.11  2008-05-02T20:42:40
       - Added the "configure_requires", "build_requires", and "recommends"
         parameters to Build.PL.

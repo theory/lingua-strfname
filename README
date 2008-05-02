@@ -1,4 +1,4 @@
-Lingua/Strfname version 0.11
+Lingua/Strfname version 0.12
 ============================
 
 This module exports a single function, strfname(), that may be used to format
