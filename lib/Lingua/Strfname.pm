@@ -130,7 +130,7 @@ David Lowe.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2000-2008, David Wheeler. All Rights Reserved.
+Copyright (c) 2000-2008, David Wheeler. Some Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
