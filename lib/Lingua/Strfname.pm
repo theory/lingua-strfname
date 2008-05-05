@@ -120,7 +120,7 @@ This module is stored in an open repository at the following address:
 
 L<https://svn.kineticode.com/Lingua-Strfname/trunk/>
 
-Patches against SVN::Notify are welcome. Please send bug reports to
+Patches against Lingua::Strfname are welcome. Please send bug reports to
 <bug-lingua-strfname@rt.cpan.org>.
 
 =head1 AUTHOR
@@ -132,7 +132,7 @@ David Lowe.
 
 Copyright (c) 2000-2008, David Wheeler. All Rights Reserved.
 
-This module is free software; you can redistribute it and/or modify it under the
-same terms as Perl itself.
+This module is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
 
 =cut
