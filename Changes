@@ -1,6 +1,6 @@
 Revision history for Perl module Lingua::Strfname.
 
-0.12
+0.12  2008-06-23T17:53:35
       - Fixed a pasto in the "Support" section of the documentation.
       - Updated copyright.
       - Enforce requirement for Perl 5.6.
