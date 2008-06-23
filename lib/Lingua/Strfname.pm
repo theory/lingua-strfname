@@ -5,7 +5,7 @@ require 5.006;
 require Exporter;
 use vars qw($VERSION @EXPORT @EXPORT_OK @ISA);
 
-$VERSION = '0.12';
+$VERSION = '0.13';
 @ISA = qw(Exporter);
 @EXPORT = @EXPORT_OK = qw(strfname);
 
