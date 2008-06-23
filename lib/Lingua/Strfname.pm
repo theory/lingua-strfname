@@ -1,6 +1,7 @@
 package Lingua::Strfname;
 
 use strict;
+require 5.006;
 require Exporter;
 use vars qw($VERSION @EXPORT @EXPORT_OK @ISA);
 

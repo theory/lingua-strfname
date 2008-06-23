@@ -4,6 +4,7 @@ my $build = Module::Build->new(
     module_name        => 'Lingua::Strfname',
     license            => 'perl',
     create_makefile_pl => 'passthrough',
+    requires           => { perl            => 5.006    },
     configure_requires => { 'Module::Build' => '0.2701' },
     recommends         => { 'Test::Pod'     => '1.20'   },
     build_requires     => {
