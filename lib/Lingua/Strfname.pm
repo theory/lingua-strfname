@@ -127,12 +127,12 @@ L<bug-Lingua-Strfname.cpan.org|mailto:bug-Lingua-Strfname.cpan.org>.
 
 =head1 AUTHOR
 
-David Wheeler <david@kineticode.com>, with implementation assistance from
+David E. Wheeler <david@justatheory.com>, with implementation assistance from
 David Lowe.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2000-2008, David Wheeler. Some Rights Reserved.
+Copyright (c) 2000-2011, David E. Wheeler. Some Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
