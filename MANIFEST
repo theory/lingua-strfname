@@ -1,9 +1,0 @@
-Build.PL
-Changes
-MANIFEST			This list of files
-META.yml
-Makefile.PL
-README
-lib/Lingua/Strfname.pm
-t/01basic.t
-t/99pod.t
