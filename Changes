@@ -1,6 +1,6 @@
 Revision history for Perl module Lingua::Strfname.
 
-0.13
+0.13  2011-06-20T05:26:29
       - Moved repostitory to
         [GitHub](https://github.com/theory/lingua-strfname/).
       - Switched to a "traditional" `Makefile.PL`.
