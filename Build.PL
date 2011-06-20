@@ -11,5 +11,12 @@ my $build = Module::Build->new(
         'Module::Build' => '0.2701',
         'Test::More'    => '0.17',
     },
+    meta_merge => {
+        resources => {
+            homepage   => 'http://search.cpan.org/dist/Lingua-Strfname/',
+            bugtracker => 'http://github.com/theory/lingua-strfname/issues/',
+            repository => 'http://github.com/theory/lingua-strfname/',
+        }
+    },
 );
 $build->create_build_script;

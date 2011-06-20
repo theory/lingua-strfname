@@ -117,12 +117,13 @@ Here are the supported formats:
 
 =head1 SUPPORT
 
-This module is stored in an open repository at the following address:
+This module is stored in an open L<GitHub
+repository|http://github.com/theory/lingua-strfname/>. Feel free to fork and
+contribute!
 
-L<https://svn.kineticode.com/Lingua-Strfname/trunk/>
-
-Patches against Lingua::Strfname are welcome. Please send bug reports to
-<bug-lingua-strfname@rt.cpan.org>.
+Please file bug reports via L<GitHub
+Issues|http://github.com/theory/lingua-strfname/issues/> or by sending mail to
+L<bug-Lingua-Strfname.cpan.org|mailto:bug-Lingua-Strfname.cpan.org>.
 
 =head1 AUTHOR
 
