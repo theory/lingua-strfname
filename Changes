@@ -1,6 +1,10 @@
 Revision history for Perl module Lingua::Strfname.
 
 0.13
+      - Moved repostitory to
+        [GitHub](https://github.com/theory/lingua-strfname/).
+      - Switched to a "traditional" `Makefile.PL`.
+      - Require Test::Pod 1.41 to run the Pod tests.
 
 0.12  2008-06-23T17:53:35
       - Fixed a pasto in the "Support" section of the documentation.
