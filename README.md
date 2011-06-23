@@ -1,4 +1,4 @@
-Lingua/Strfname version 0.13
+Lingua/Strfname version 0.14
 ============================
 
 This module exports a single function, `strfname()`, that may be used to
