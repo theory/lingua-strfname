@@ -1,6 +1,7 @@
 Revision history for Perl module Lingua::Strfname.
 
 0.14
+      - Fixed broken rt.cpan.org email address.
 
 0.13  2011-06-20T05:26:29
       - Moved repostitory to

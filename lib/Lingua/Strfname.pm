@@ -123,7 +123,7 @@ contribute!
 
 Please file bug reports via L<GitHub
 Issues|http://github.com/theory/lingua-strfname/issues/> or by sending mail to
-L<bug-Lingua-Strfname.cpan.org|mailto:bug-Lingua-Strfname.cpan.org>.
+L<bug-Lingua-Strfname@rt.cpan.org|mailto:bug-Lingua-Strfname@rt.cpan.org>.
 
 =head1 AUTHOR
 
